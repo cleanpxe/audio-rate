@@ -1,0 +1,50 @@
+# ---- Human-subjects data: raw recordings never enter this repo (course ethics rule) ----
+*.wav
+*.flac
+*.m4a
+*.mp3
+*.aac
+*.ogg
+*.caf
+*.aiff
+# session bundles (P01_2026-10-02/ …) and anything under data/raw
+P[0-9][0-9]_*/
+data/raw/
+data/sessions/
+h10_*.csv
+imu_*.csv
+audio_*.wav
+
+# ---- Xcode / Swift ----
+capture/**/xcuserdata/
+capture/**/DerivedData/
+capture/**/build/
+capture/**/*.xcuserstate
+capture/**/*.moved-aside
+capture/**/Pods/
+*.ipa
+*.dSYM.zip
+*.dSYM
+.swiftpm/
+.build/
+
+# ---- Python ----
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+*.egg-info/
+
+# ---- Models / large artefacts (release deliberately, see data/README.md) ----
+*.mlmodelc/
+*.tflite
+*.pt
+*.ckpt
+
+# ---- OS / editor / secrets ----
+.DS_Store
+Thumbs.db
+.env
+*.pem
+.idea/
+.vscode/
